@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./components/layout";
+import Main from "./components/main";
+import Section1 from "./routes/section1";
+import Section3 from "./routes/section3";
+import Test1 from "./routes/test1";
+
+// createBrowserRouter 함수를 사용하여 라우터를 생성
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: "true",
+        element: <Main />,
+      },
+      {
+        path: "section1",
+        element: <Section1 />,
+      },
+      {
+        path: "/test1",
+        element: <Test1 />,
+      },
+      {
+        path: "/section3",
+        element: <Section3 />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
