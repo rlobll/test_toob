@@ -4,10 +4,12 @@
 
 - git 설치 : https://git-scm.com
 - node 설치 : https://nodejs.org/en/
+- node_modules 설치 : npm install (_매우 중요_)
 - react-scripts 설치 : npm install -g react-scripts
 - create react app 설치 : npm install -g create-react-app
 - 맥 사용자 권한 거부시 : sudo npm install -g create-react-app 입력 후 맥북 비밀번호 입력
 - 설치 확인 : create-react-app -V(대문자)
+  (윈도우에서 설치확인은 터미널을 powershell에서 git bash로 바꿔서 해주세요)
 - 프로젝트 생성 : create-react-app . or create-react-app app-name(app-name은 원하는 이름으로 생성하기)
 - create-react-app app-name로 설치 시 : cd app-name
 - 샘플 앱 실행 : npm start(http://localhost:3000)
