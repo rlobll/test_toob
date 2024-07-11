@@ -16,3 +16,7 @@
 - swiper : npm install swiper
 
   (맥북 사용 시 에러가 뜬다면 sudo를 앞에 입력하고 설치 해 주세요)
+
+# 배포 사이트
+
+https://test-toob.vercel.app/
