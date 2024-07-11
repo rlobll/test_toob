@@ -2,6 +2,9 @@
 
 ## 프로젝트 설치 방법 작성
 
+- git 설치 : https://git-scm.com
+- node 설치 : https://nodejs.org/en/
+- react-scripts 설치 : npm install -g react-scripts
 - create react app 설치 : npm install -g create-react-app
 - 맥 사용자 권한 거부시 : sudo npm install -g create-react-app 입력 후 맥북 비밀번호 입력
 - 설치 확인 : create-react-app -V(대문자)
